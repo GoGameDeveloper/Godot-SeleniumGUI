@@ -1,0 +1,252 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Scripts/TestFolder/Program.cs" type="Script" id=1]
+[ext_resource path="res://PNG/Window03_Btn.png" type="Texture" id=2]
+[ext_resource path="res://PNG/Window01.png" type="Texture" id=3]
+[ext_resource path="res://PNG/BarWindow.png" type="Texture" id=4]
+[ext_resource path="res://PNG/BtnExitNoOpacity.png" type="Texture" id=6]
+[ext_resource path="res://PNG/BtnExitOpacity.png" type="Texture" id=7]
+[ext_resource path="res://Fonts/OpenSans-Semibold.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://PNG/PanelWindow.png" type="Texture" id=9]
+[ext_resource path="res://PNG/Btn_V15.png" type="Texture" id=10]
+[ext_resource path="res://PNG/Btn_V16.png" type="Texture" id=11]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+font_data = ExtResource( 8 )
+
+[sub_resource type="Theme" id=2]
+default_font = SubResource( 1 )
+
+[node name="TestScript" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="MarginContainer2" type="MarginContainer" parent="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer2"]
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = ExtResource( 3 )
+expand = true
+
+[node name="AppLabel" type="Label" parent="Control"]
+anchor_right = 1.0
+margin_left = 103.0
+margin_top = 10.0
+margin_right = -104.0
+margin_bottom = 38.0
+text = "Godot Selenium WebDriver Testing"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer3" type="MarginContainer" parent="Control"]
+anchor_bottom = 1.0
+margin_left = 26.0
+margin_top = 55.0
+margin_right = 214.0
+margin_bottom = -20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer3"]
+margin_right = 188.0
+margin_bottom = 525.0
+texture = ExtResource( 4 )
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+anchor_bottom = 1.0
+margin_left = 42.0
+margin_top = 118.0
+margin_right = 90.0
+margin_bottom = -179.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer"]
+margin_right = 150.0
+margin_bottom = 303.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TestOne" type="TextureButton" parent="Control/MarginContainer/VBoxContainer"]
+margin_right = 150.0
+margin_bottom = 48.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Control/MarginContainer/VBoxContainer/TestOne"]
+margin_left = 11.0
+margin_top = 9.0
+margin_right = 138.0
+margin_bottom = 38.0
+text = "First Test"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TestTwo" type="TextureButton" parent="Control/MarginContainer/VBoxContainer"]
+margin_top = 52.0
+margin_right = 150.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Control/MarginContainer/VBoxContainer/TestTwo"]
+margin_left = 11.0
+margin_top = 9.0
+margin_right = 138.0
+margin_bottom = 38.0
+text = "Second Test"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TestThree" type="TextureButton" parent="Control/MarginContainer/VBoxContainer"]
+margin_top = 104.0
+margin_right = 150.0
+margin_bottom = 152.0
+texture_normal = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="Control/MarginContainer/VBoxContainer/TestThree"]
+margin_left = 11.0
+margin_top = 9.0
+margin_right = 138.0
+margin_bottom = 38.0
+text = "Third Test"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer4" type="MarginContainer" parent="Control"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -74.6292
+margin_top = 32.3814
+margin_right = -19.6292
+margin_bottom = 87.3814
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Quit" type="TextureButton" parent="Control/MarginContainer4"]
+modulate = Color( 0, 0.764706, 1, 1 )
+margin_right = 55.0
+margin_bottom = 55.0
+texture_normal = ExtResource( 6 )
+texture_pressed = ExtResource( 7 )
+
+[node name="MarginContainer5" type="MarginContainer" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -294.0
+margin_top = -229.0
+margin_right = 464.0
+margin_bottom = 220.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer5"]
+margin_right = 758.0
+margin_bottom = 449.0
+texture = ExtResource( 9 )
+expand = true
+
+[node name="MarginContainer6" type="MarginContainer" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -271.178
+margin_top = -188.557
+margin_right = 364.822
+margin_bottom = 189.443
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/MarginContainer6"]
+margin_right = 636.0
+margin_bottom = 378.0
+focus_mode = 2
+theme = SubResource( 2 )
+custom_colors/default_color = Color( 0.290196, 0.576471, 0.588235, 1 )
+scroll_following = true
+selection_enabled = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -180.874
+margin_top = 221.945
+margin_right = 305.126
+margin_bottom = 276.945
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DeleteLog" type="TextureButton" parent="Control/HBoxContainer"]
+margin_right = 241.0
+margin_bottom = 55.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+
+[node name="Label" type="Label" parent="Control/HBoxContainer/DeleteLog"]
+margin_right = 241.0
+margin_bottom = 55.0
+text = "Delete log"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AllTests" type="TextureButton" parent="Control/HBoxContainer"]
+margin_left = 245.0
+margin_right = 486.0
+margin_bottom = 55.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+
+[node name="Label" type="Label" parent="Control/HBoxContainer/AllTests"]
+margin_right = 241.0
+margin_bottom = 55.0
+text = "Run all tests"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/TestOne" to="." method="_on_TestOne_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/TestTwo" to="." method="_on_TestTwo_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/VBoxContainer/TestThree" to="." method="_on_TestThree_pressed"]
+[connection signal="pressed" from="Control/MarginContainer4/Quit" to="." method="_on_Quit_pressed"]
+[connection signal="pressed" from="Control/HBoxContainer/DeleteLog" to="." method="_on_DeleteLog_pressed"]
+[connection signal="pressed" from="Control/HBoxContainer/AllTests" to="." method="_on_AllTests_pressed"]
